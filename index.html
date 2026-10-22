@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>B1t_g0r1lla — Кибербезопасность и разработка</title>
+    <meta
+      name="description"
+      content="Личный сайт начинающего специалиста: кибербезопасность, разработка, учебные проекты и база знаний для новичков."
+    />
+    <meta name="theme-color" content="#080A09" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Open Graph / social preview. Absolute URL so social networks can load the preview. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="B1t_g0r1lla" />
+    <meta property="og:title" content="B1t_g0r1lla — Cybersecurity & Development" />
+    <meta
+      property="og:description"
+      content="Learn systems. Build tools. Stay curious. Projects, experiments and a beginner-friendly knowledge base."
+    />
+    <meta property="og:image" content="https://sasiska666.github.io/og-image.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Fonts: Geologica (display, Latin + Cyrillic), Inter (body), JetBrains Mono (code), Noto Sans SC (Chinese).
+         Separate <link>s so one failing family never blocks the others. Self-hosting is described in README. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300..800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+    />
+
+    <script>
+      // Apply the saved language before React mounts to avoid a flash of the wrong <html lang>.
+      (function () {
+        try {
+          var l = localStorage.getItem('b1t.lang');
+          var map = { ru: 'ru', en: 'en', zh: 'zh-CN' };
+          if (map[l]) {
+            document.documentElement.lang = map[l];
+            document.documentElement.setAttribute('data-lang', l);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 2rem; font-family: monospace; color: #f1f4ef; background: #080a09">
+        B1t_g0r1lla — this site needs JavaScript. / Для работы сайта нужен JavaScript. / 本网站需要启用 JavaScript。
+        <br />Telegram: <a style="color: #b7ff00" href="https://t.me/B1t_g0r1lla404">t.me/B1t_g0r1lla404</a>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

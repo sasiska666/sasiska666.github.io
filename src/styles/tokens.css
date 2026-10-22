@@ -1,0 +1,35 @@
+/* ───────────────── Design tokens ───────────────── */
+:root {
+  --bg: #080a09;
+  --bg-2: #101411;
+  --bg-3: #151b16;
+  --accent: #b7ff00;
+  --accent-2: #43ff91;
+  --text: #f1f4ef;
+  --muted: #929a91;
+  --line: #252c25;
+  --line-2: #354035;
+  --accent-ink: #0a0d00; /* text on lime */
+  --accent-soft: rgba(183, 255, 0, 0.08);
+  --accent-2-soft: rgba(67, 255, 145, 0.1);
+
+  --font-display: 'Geologica', 'Inter', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Noto Sans SC', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Noto Sans SC', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --nav-h: 64px;
+  --wrap: 1360px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --section-pad: clamp(80px, 11vw, 160px);
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --track: 0.14em; /* tracking for small uppercase mono labels */
+
+  color-scheme: dark;
+}
+
+/* Chinese: CJK-first fonts, no wide tracking (uppercase tracking looks broken on Hanzi). */
+html[data-lang='zh'] {
+  --font-display: 'Noto Sans SC', 'Geologica', system-ui, sans-serif;
+  --font-body: 'Noto Sans SC', 'Inter', system-ui, sans-serif;
+  --track: 0.06em;
+}
